@@ -1,0 +1,6 @@
+/* Self-hosted display fonts. Ma Shan Zheng & Noto Serif SC — SIL Open Font License 1.1.
+   Subsetted to the characters used in this site. */
+@font-face{font-family:'Ma Shan Zheng';font-style:normal;font-weight:400;font-display:swap;src:url('../assets/fonts/mashan-400-merged.woff2') format('woff2');}
+@font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:400;font-display:swap;src:url('../assets/fonts/notoserif-400-merged.woff2') format('woff2');}
+@font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:500;font-display:swap;src:url('../assets/fonts/notoserif-600-merged.woff2') format('woff2');}
+@font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:600;font-display:swap;src:url('../assets/fonts/notoserif-600-merged.woff2') format('woff2');}
