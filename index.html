@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#120c09">
+<title>人龙舞数字文创馆</title>
+<meta name="description" content="人龙舞数字文创馆：以国家级非遗“龙舞（湛江人龙舞）”为文化母题，构建“小湛龙 × 小玲珑”双 IP、五色视觉系统与 11 类文创周边。人相连，而成龙。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="人龙舞数字文创馆">
+<meta property="og:site_name" content="人龙舞数字文创馆">
+<meta property="og:description" content="不画一条龙，而画人如何成为龙。一次从东海岛身体民俗到当代生活方式的视觉转译。">
+<meta property="og:image" content="assets/hero/hero-wide.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/brand/favicon.png">
+<link rel="preload" href="assets/hero/hero-scene.webp" as="image" fetchpriority="high">
+<link rel="preload" href="assets/brand/wordmark.png" as="image" fetchpriority="high">
+<link rel="preload" href="css/fonts.css" as="style">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>body.is-loading{overflow:auto}.loader{display:none}.js [data-reveal]{opacity:1!important;transform:none!important}.js .hero__eyebrow,.js .hero__tagline,.js .hero__desc,.js .hero__actions,.js .hero__meta,.js .hero__float,.js .hero__vertical,.js .hero__marquee,.js .hero__wordmark,.js .hero__arch{opacity:1!important;clip-path:none!important;transform:none!important}</style></noscript>
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');window.setTimeout(function(){if(document.body&&document.body.classList.contains('is-loading')){document.body.classList.remove('is-loading');document.body.classList.add('is-loaded');var l=document.getElementById('loader');if(l)l.style.display='none';}},4600);</script>
+</head>
+<body class="is-loading">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div class="loader__brand">
+      <img src="assets/brand/logo.png" alt="" class="loader__mark">
+      <div>
+        <p class="loader__title">人龙舞数字文创馆</p>
+        <p class="loader__en">RENLONGWU DIGITAL GALLERY</p>
+      </div>
+    </div>
+    <div class="loader__door">
+      <span class="loader__door-line"></span>
+      <span class="loader__door-label">岭南人龙舞 · 非遗文创</span>
+      <span class="loader__door-line"></span>
+    </div>
+    <div class="loader__track"><span id="loaderBar"></span></div>
+    <div class="loader__foot"><span>ASSEMBLING THE DRAGON</span><span id="loaderPercent">00</span></div>
+  </div>
+  <div class="loader__panel"></div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+<div class="page-progress" aria-hidden="true"><span id="pageProgress"></span></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="#hero" aria-label="人龙舞数字文创馆，回到序章">
+    <span class="brand__mark"><img src="assets/brand/logo.png" alt=""></span>
+    <span class="brand__text">人龙舞数字文创馆<small>岭南人龙舞 · 2026</small></span>
+  </a>
+  <nav class="main-nav" aria-label="主要章节">
+    <a href="#origin" data-nav>源流</a>
+    <a href="#concept" data-nav>破题</a>
+    <a href="#ip" data-nav>双 IP</a>
+    <a href="#system" data-nav>视觉系统</a>
+    <a href="#products" data-nav>周边</a>
+    <a href="#craft" data-nav>工艺</a>
+  </nav>
+  <div class="header-actions">
+    <button class="demo-trigger" type="button" data-demo-open>
+      <i aria-hidden="true"></i><span>一键演示</span><kbd>P</kbd>
+    </button>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="chapterMenu" id="menuBtn">
+      <span class="menu-btn__label">MENU</span>
+      <span class="menu-btn__lines" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<aside class="chapter-rail" id="chapterRail" aria-label="章节快捷索引">
+  <div class="chapter-rail__track"><span id="railProgress"></span></div>
+  <ol>
+    <li><button type="button" data-rail="hero" class="is-active"><span>序章</span><i></i></button></li>
+    <li><button type="button" data-rail="origin"><span>源流</span><i></i></button></li>
+    <li><button type="button" data-rail="concept"><span>破题</span><i></i></button></li>
+    <li><button type="button" data-rail="ip"><span>双 IP</span><i></i></button></li>
+    <li><button type="button" data-rail="system"><span>系统</span><i></i></button></li>
+    <li><button type="button" data-rail="products"><span>周边</span><i></i></button></li>
+    <li><button type="button" data-rail="craft"><span>工艺</span><i></i></button></li>
+    <li><button type="button" data-rail="process"><span>档案</span><i></i></button></li>
+    <li><button type="button" data-rail="boards"><span>展板</span><i></i></button></li>
+    <li><button type="button" data-rail="value"><span>价值</span><i></i></button></li>
+  </ol>
+</aside>
+
+<div class="menu" id="chapterMenu" role="dialog" aria-modal="true" aria-label="全部章节目录" aria-hidden="true">
+  <div class="menu__glow" aria-hidden="true"></div>
+  <div class="menu__head">
+    <span class="menu__label">CHAPTER INDEX / 展览目录</span>
+    <button class="menu__close" type="button" id="menuClose" aria-label="关闭章节目录"><span>关闭</span><b class="menu__close-x" aria-hidden="true">×</b></button>
+  </div>
+  <div class="menu__body">
+    <nav class="menu__nav" aria-label="全部章节">
+      <a href="#hero" data-menu-link data-preview="assets/hero/hero-scene.webp"><span>00</span><strong>序章</strong><em>PROLOGUE</em></a>
+      <a href="#origin" data-menu-link data-preview="assets/hero/origin-scene.webp"><span>01</span><strong>源流</strong><em>ORIGIN</em></a>
+      <a href="#concept" data-menu-link data-preview="assets/hero/hero-wide.webp"><span>02</span><strong>破题</strong><em>CONCEPT</em></a>
+      <a href="#ip" data-menu-link data-preview="assets/ip/pair.webp"><span>03</span><strong>双 IP</strong><em>CHARACTERS</em></a>
+      <a href="#system" data-menu-link data-preview="assets/system/logo-sketch.webp"><span>04</span><strong>系统</strong><em>IDENTITY</em></a>
+      <a href="#products" data-menu-link data-preview="assets/products/overview.webp"><span>05</span><strong>周边</strong><em>PRODUCTS</em></a>
+      <a href="#craft" data-menu-link data-preview="assets/products/craft-detail.webp"><span>06</span><strong>工艺</strong><em>CRAFT</em></a>
+      <a href="#process" data-menu-link data-preview="assets/process/sketch-cover-hi.webp"><span>07</span><strong>档案</strong><em>PROCESS</em></a>
+      <a href="#boards" data-menu-link data-preview="assets/boards/board1.webp"><span>08</span><strong>展板</strong><em>BOARDS</em></a>
+      <a href="#value" data-menu-link data-preview="assets/hero/hero-wide.webp"><span>09</span><strong>价值</strong><em>VALUE</em></a>
+    </nav>
+    <div class="menu__preview">
+      <div class="menu__preview-frame"><img id="menuPreviewImg" src="assets/hero/hero-scene.webp" alt=""></div>
+      <p>国家级非遗 · 龙舞（湛江人龙舞）<br>编号 Ⅲ-4 · 2006 年第一批</p>
+      <button class="btn btn--line" type="button" data-demo-open data-demo-from-menu>进入评委演示模式<span class="btn__arrow">↗</span></button>
+    </div>
+  </div>
+  <div class="menu__foot">
+    <span>广东 · 湛江 · 东海岛</span>
+    <span>人相连，而成龙。</span>
+    <span>© 2026 人龙舞数字文创馆</span>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="hero" id="hero" data-section data-chapter="序章" data-theme="dark" aria-labelledby="heroTitle">
+  <div class="hero__ambient" aria-hidden="true">
+    <span class="hero__sun"></span>
+    <span class="hero__orbit hero__orbit--one"></span>
+    <span class="hero__orbit hero__orbit--two"></span>
+    <span class="hero__giant">龍</span>
+  </div>
+  <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero__inner shell">
+    <div class="hero__copy">
+      <div class="hero__eyebrow">
+        <span class="hero__eyebrow-line"></span>
+        <span>国家级非物质文化遗产 · 龙舞（湛江人龙舞）</span>
+        <em>Ⅲ-4</em>
+      </div>
+      <h1 class="hero__title" id="heroTitle">
+        <span class="sr-only">岭南人龙舞</span>
+        <img src="assets/brand/wordmark.png" alt="" class="hero__wordmark" width="1169" height="200">
+        <span class="hero__title-sub">非遗文创产品设计</span>
+      </h1>
+      <p class="hero__tagline">人相连，<em>而成龙。</em></p>
+      <p class="hero__desc">不画一条龙，而是画人如何搭成龙。以双 IP、五色体系与 11 类周边，把湛江东海岛的身体民俗，翻译成年轻人愿意带走的生活。</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#origin">开始巡览<span class="btn__arrow">↘</span></a>
+        <button class="btn btn--ghost" type="button" data-demo-open><span class="btn__play" aria-hidden="true"></span>评委演示模式</button>
+      </div>
+      <ul class="hero__meta" aria-label="项目信息">
+        <li><span>2006</span>第一批国家级非遗</li>
+        <li><span>2</span>个核心 IP</li>
+        <li><span>11</span>类文创周边</li>
+        <li><span>6</span>种落地工艺</li>
+      </ul>
+    </div>
+    <div class="hero__stage">
+      <figure class="hero__arch" data-parallax data-depth="14">
+        <div class="hero__arch-media"><img src="assets/hero/hero-scene.webp" alt="小湛龙、小玲珑与少年舞者在东海岛海岸起舞" width="1145" height="1226" fetchpriority="high"></div>
+        <div class="hero__arch-shade"></div>
+        <span class="hero__seal">东方<br>一绝</span>
+        <figcaption>
+          <span>双 IP · 场景化主视觉</span>
+          <span>东海岛 / 2026</span>
+        </figcaption>
+      </figure>
+      <div class="hero__float hero__float--one" data-float>
+        <span class="hero__float-kicker">CHARACTERS</span>
+        <strong>小湛龙 <i>×</i> 小玲珑</strong>
+        <span>舞生 · 舞旦 / 左刚右柔</span>
+      </div>
+      <div class="hero__float hero__float--two" data-float>
+        <span class="hero__float-year">2006</span>
+        <span>列入第一批<br>国家级非遗名录</span>
+      </div>
+      <span class="hero__vertical">RENLONGWU · DRAGON DANCE · 湛江</span>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true"><span>SCROLL TO UNFOLD</span><i></i></div>
+  <div class="hero__marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>人链</span><i>◆</i><span>龙头</span><i>◆</i><span>海浪</span><i>◆</i><span>龙腾湛海 · 舞韵相传</span><i>◆</i><span>人龙舞 · 潮起来 · 传下去</span><i>◆</i>
+      <span>人链</span><i>◆</i><span>龙头</span><i>◆</i><span>海浪</span><i>◆</i><span>龙腾湛海 · 舞韵相传</span><i>◆</i><span>人龙舞 · 潮起来 · 传下去</span><i>◆</i>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper origin" id="origin" data-section data-chapter="源流" data-theme="paper" aria-labelledby="originTitle">
+  <div class="section-rule" aria-hidden="true"></div>
+  <div class="shell">
+    <header class="section-head" data-reveal>
+      <div class="section-marker">
+        <span class="section-marker__num">01</span>
+        <span class="section-marker__line"></span>
+        <span class="section-marker__label">源流 / ORIGIN</span>
+      </div>
+      <h2 class="display" id="originTitle">从东海岛的海浪里，<br>长出一条<em>人做的龙</em>。</h2>
+      <div class="section-head__side">
+        <p class="section-lead">它没有布龙，也没有竹骨。几十至数百人肩背相叠、以身相接。龙头高昂，龙身翻腾，龙尾劲摆——人即龙，龙即人。</p>
+        <span class="section-index">FIELD NOTE · 001</span>
+      </div>
+    </header>
+
+    <div class="origin__grid">
+      <div class="origin__story">
+        <p class="origin__intro" data-reveal>“人龙舞”流传于广东湛江东海岛一带，2006 年列入第一批国家级非物质文化遗产名录（龙舞，编号 Ⅲ-4），素有“东方一绝”之誉。</p>
+        <p data-reveal>它最动人的地方，不在于龙形之巨，而在于结构的诚实：每一个人都是龙身的一节，任何一节的松动都会让整条龙失形。这种“个体连接成整体”的组织方式，既是海岛宗族社会的缩影，也是岭南民俗中最具当代转译价值的视觉母题。</p>
+        <blockquote class="pullquote" data-reveal>
+          <span class="pullquote__mark">“</span>
+          不做文物的复刻，<br>而做精神的再造。
+          <cite>—— 设计主张</cite>
+        </blockquote>
+        <div class="origin__facts" data-reveal>
+          <div><span>Ⅲ-4</span><p>龙舞（湛江人龙舞）<br>国家级非遗项目编号</p></div>
+          <div><span>2006</span><p>第一批国家级<br>非物质文化遗产名录</p></div>
+          <div><span>数十至数百</span><p>舞者以身体相接<br>搭成一条长龙</p></div>
+          <div><span>起 · 承 · 转 · 合</span><p>起龙、龙点头<br>龙穿云、龙卷浪</p></div>
+        </div>
+      </div>
+
+      <figure class="origin__figure" data-reveal>
+        <div class="origin__figure-frame" data-parallax data-depth="8">
+          <img src="assets/hero/origin-scene.webp" alt="东海岛海岸上，人龙舞的少年舞者群像" width="1328" height="1174" loading="lazy">
+          <span class="origin__figure-vignette"></span>
+        </div>
+        <figcaption><span>湛江东海岛 · 人龙舞场景化复原</span><span>SCENE / 2026</span></figcaption>
+        <span class="stamp-sticker" aria-hidden="true">人即龙<br>龙即人</span>
+      </figure>
+    </div>
+
+    <div class="era-strip" data-reveal>
+      <article class="era">
+        <span class="era__dot"></span><span class="era__time">明末</span>
+        <h3>传说起源</h3>
+        <p>艺人传说，人龙舞始于明末，以身体模拟龙形，在年例与庙会中起舞。</p>
+      </article>
+      <article class="era">
+        <span class="era__dot"></span><span class="era__time">清 · 乾嘉</span>
+        <h3>走向鼎盛</h3>
+        <p>随宗族与年例民俗兴盛，形成完整的表演程式与锣鼓号角。</p>
+      </article>
+      <article class="era">
+        <span class="era__dot"></span><span class="era__time">2006</span>
+        <h3>国家级非遗</h3>
+        <p>列入第一批国家级非物质文化遗产名录，项目编号 Ⅲ-4。</p>
+      </article>
+      <article class="era era--now">
+        <span class="era__dot"></span><span class="era__time">今天</span>
+        <h3>当代表达</h3>
+        <p>双 IP、视觉系统与 11 类周边，让身体民俗重新进入年轻人的日常。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink concept" id="concept" data-section data-chapter="破题" data-theme="dark" aria-labelledby="conceptTitle">
+  <div class="shell">
+    <header class="section-head" data-reveal>
+      <div class="section-marker section-marker--gold">
+        <span class="section-marker__num">02</span>
+        <span class="section-marker__line"></span>
+        <span class="section-marker__label">破题 / CONCEPT</span>
+      </div>
+      <h2 class="display" id="conceptTitle">我们不画龙，<br>我们画<em>人如何成为龙</em>。</h2>
+      <div class="section-head__side">
+        <p class="section-lead">人链是单元，龙头是方向，海浪是动势。把这三件事拆开，再重新连接，就得到一套可以无限生长的图形语法。</p>
+        <span class="section-index">THE METHOD · 002</span>
+      </div>
+    </header>
+
+    <div class="chain-lab" data-reveal>
+      <div class="chain-copy">
+        <div class="chain-tabs" role="tablist" aria-label="从个体到龙的三个阶段">
+          <button class="chain-tab is-active" type="button" role="tab" aria-selected="true" data-chain-step="0">
+            <span>01</span><strong>散落的人</strong><em>UNIT</em>
+          </button>
+          <button class="chain-tab" type="button" role="tab" aria-selected="false" data-chain-step="42">
+            <span>02</span><strong>连接</strong><em>RELATION</em>
+          </button>
+          <button class="chain-tab" type="button" role="tab" aria-selected="false" data-chain-step="100">
+            <span>03</span><strong>成龙</strong><em>GROWTH</em>
+          </button>
+        </div>
+        <p class="chain-desc" id="chainDesc">个体是独立的点，尚未发生关系。每一个舞者都是可识别的“人”，也是龙身最小的计量单位。</p>
+        <p class="chain-note">圆形代表人（单元），弧线代表连接（关系），重复与错位代表生长（动势）。</p>
+      </div>
+      <div class="chain-stage" id="chainStage">
+        <div class="chain-stage__grid" aria-hidden="true"></div>
+        <canvas id="chainCanvas" role="img" aria-label="由舞者个体逐渐连接成龙形的动态图示"></canvas>
+        <span class="chain-stage__hint">DRAG TO ASSEMBLE</span>
+        <div class="chain-stage__labels" aria-hidden="true"><span>人</span><span>链</span><span>龙</span></div>
+        <div class="chain-control">
+          <label for="chainRange">拖动，见证个体连成一条龙</label>
+          <div class="chain-control__row">
+            <input type="range" id="chainRange" min="0" max="100" value="0" step="1" aria-label="人链组装进度">
+            <button type="button" class="mini-btn" id="chainReplay">重播 <span>↻</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="concept-cards">
+      <article class="concept-card" data-reveal>
+        <span class="concept-card__char">人</span>
+        <div><span class="concept-card__num">01 / UNIT</span><h3>每一个身体，都是单元</h3><p>先有可识别的个体，才有可以被连接的关系。IP 的三视图、统一比例与描边，正是“单元”的标准化。</p></div>
+      </article>
+      <article class="concept-card" data-reveal>
+        <span class="concept-card__char">链</span>
+        <div><span class="concept-card__num">02 / CONNECTION</span><h3>肩背相叠，才成结构</h3><p>弧线把手、肩、背连接在一起。图形里的连接线不是装饰，它就是人龙舞得以成立的力学关系。</p></div>
+      </article>
+      <article class="concept-card" data-reveal>
+        <span class="concept-card__char">龙</span>
+        <div><span class="concept-card__num">03 / GROWTH</span><h3>重复与错位，产生生命</h3><p>当单元开始重复、错位、起伏，结构就有了动势。主图形可以横向铺满袋面，也可以缩成徽章上的一个圆。</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper ip" id="ip" data-section data-chapter="双 IP" data-theme="paper" aria-labelledby="ipTitle">
+  <div class="section-rule" aria-hidden="true"></div>
+  <div class="shell">
+    <header class="section-head" data-reveal>
+      <div class="section-marker">
+        <span class="section-marker__num">03</span>
+        <span class="section-marker__line"></span>
+        <span class="section-marker__label">造形 / CHARACTERS</span>
+      </div>
+      <h2 class="display" id="ipTitle">一刚一柔，<br>两个<em>会跳舞的年轻人</em>。</h2>
+      <div class="section-head__side">
+        <p class="section-lead">小湛龙是舞生，小玲珑是舞旦。共享 2.5 头身、描边粗细与高光位置，差异只落在色相、发型与道具上——同构异色，才能并肩成一条龙。</p>
+        <span class="section-index">DUAL IP · 003</span>
+      </div>
+    </header>
+
+    <div class="ip-grid">
+      <article class="ip-card ip-card--zhan" data-ip-viewer="zhan" data-reveal>
+        <div class="ip-card__head">
+          <span class="ip-card__tag">01 / 舞生 · 力量</span>
+          <span class="ip-card__ghost" aria-hidden="true">龍</span>
+          <div class="ip-card__name">
+            <h3>小湛龙<small>XIAO ZHANLONG</small></h3>
+            <p>活泼奔放 · 喜欢传统文化 · 领舞者</p>
+          </div>
+          <span class="ip-card__seal">舞<br>生</span>
+        </div>
+        <div class="ip-card__body">
+          <div class="ip-copy">
+            <p>“活泼奔放，喜欢传统文化，希望把非遗文化传播给更多人。”</p>
+            <dl class="ip-specs">
+              <div><dt>身份</dt><dd>舞生 / 舞角 / 表演者</dd></div>
+              <div><dt>性格</dt><dd>活泼、外向、有力量</dd></div>
+              <div><dt>道具</dt><dd>龙首冠 · 龙头杖 · 红腰带</dd></div>
+              <div><dt>主色</dt><dd>墨绿 #3E7A52 / 朱砂红 #A63A28</dd></div>
+            </dl>
+            <div class="color-dots" aria-label="角色色板">
+              <span style="--dot:#3e7a52"></span><span style="--dot:#a63a28"></span><span style="--dot:#e8b65a"></span>
+            </div>
+          </div>
+          <div class="ip-figure">
+            <span class="ip-figure__halo" aria-hidden="true"></span>
+            <div class="ip-figure__stack">
+              <img class="ip-img is-active" data-view="front" src="assets/ip/zhan-front.webp" alt="小湛龙正面形象" width="560" height="700">
+              <img class="ip-img" data-view="side" src="assets/ip/zhan-side.webp" alt="小湛龙侧面形象" width="560" height="700" loading="lazy">
+              <img class="ip-img" data-view="back" src="assets/ip/zhan-back.webp" alt="小湛龙背面形象" width="560" height="700" loading="lazy">
+            </div>
+            <div class="ip-view-switch" role="group" aria-label="小湛龙三视图切换">
+              <button type="button" class="is-active" data-view-btn="front">正面 <span>FRONT</span></button>
+              <button type="button" data-view-btn="side">侧面 <span>SIDE</span></button>
+              <button type="button" data-view-btn="back">背面 <span>BACK</span></button>
+            </div>
+            <span class="ip-view-caption">正面 / FRONT</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="ip-card ip-card--ling" data-ip-viewer="ling" data-reveal>
+        <div class="ip-card__head">
+          <span class="ip-card__tag">02 / 舞旦 · 韵律</span>
+          <span class="ip-card__ghost" aria-hidden="true">鳳</span>
+          <div class="ip-card__name">
+            <h3>小玲珑<small>XIAO LINGLONG</small></h3>
+            <p>温婉灵动 · 情系龙舞 · 传承者</p>
+          </div>
+          <span class="ip-card__seal">舞<br>旦</span>
+        </div>
+        <div class="ip-card__body">
+          <div class="ip-copy">
+            <p>“温婉娴静，情系龙舞；坚守传承，传扬非遗。”</p>
+            <dl class="ip-specs">
+              <div><dt>身份</dt><dd>舞旦 / 舞角 / 表演者</dd></div>
+              <div><dt>性格</dt><dd>温柔、细腻、有亲和力</dd></div>
+              <div><dt>配饰</dt><dd>双丫髻 · 龙首发饰 · 暖橘腰封</dd></div>
+              <div><dt>主色</dt><dd>藤黄 #E8B65A / 暖橘 #D66934</dd></div>
+            </dl>
+            <div class="color-dots" aria-label="角色色板">
+              <span style="--dot:#e8b65a"></span><span style="--dot:#d66934"></span><span style="--dot:#a63a28"></span>
+            </div>
+          </div>
+          <div class="ip-figure">
+            <span class="ip-figure__halo" aria-hidden="true"></span>
+            <div class="ip-figure__stack">
+              <img class="ip-img is-active" data-view="front" src="assets/ip/ling-front.webp" alt="小玲珑正面形象" width="560" height="700">
+              <img class="ip-img" data-view="side" src="assets/ip/ling-side.webp" alt="小玲珑侧面形象" width="560" height="700" loading="lazy">
+              <img class="ip-img" data-view="back" src="assets/ip/ling-back.webp" alt="小玲珑背面形象" width="560" height="700" loading="lazy">
+            </div>
+            <div class="ip-view-switch" role="group" aria-label="小玲珑三视图切换">
+              <button type="button" class="is-active" data-view-btn="front">正面 <span>FRONT</span></button>
+              <button type="button" data-view-btn="side">侧面 <span>SIDE</span></button>
+              <button type="button" data-view-btn="back">背面 <span>BACK</span></button>
+            </div>
+            <span class="ip-view-caption">正面 / FRONT</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <figure class="duo-band" data-reveal>
+      <img src="assets/hero/hero-wide.webp" alt="小湛龙与小玲珑并肩站在东海岛海岸，身后是少年人龙舞队" width="1748" height="940" loading="lazy">
+      <div class="duo-band__overlay">
+        <span class="duo-band__kicker">DUO / 双人单元</span>
+        <blockquote>单看是两个人，<br>合起来是<em>一条龙的两节</em>。</blockquote>
+        <p>左刚右柔 · 固定不互换 / 间距约 0.3 个头宽</p>
+      </div>
+      <figcaption>双 IP 场景化主视觉 / 海岸、浪花与人的连接</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section section--ink system" id="system" data-section data-chapter="系统" data-theme="dark" aria-labelledby="systemTitle">
+  <div class="shell">
+    <header class="section-head" data-reveal>
+      <div class="section-marker section-marker--gold">
+        <span class="section-marker__num">04</span>
+        <span class="section-marker__line"></span>
+        <span class="section-marker__label">系统 / IDENTITY</span>
+      </div>
+      <h2 class="display" id="systemTitle">一条可以生长的线，<br>长成<em>一整套系统</em>。</h2>
+      <div class="section-head__side">
+        <p class="section-lead">从现场观察到龙元素，再到动漫风格；从圆形徽记到龙纹、云纹，最后收束成一朵龙云。所有图形共享同一套曲率与收笔方式。</p>
+        <span class="section-index">VISUAL SYSTEM · 004</span>
+      </div>
+    </header>
+
+    <div class="symbol-recipe" data-reveal>
+      <div class="recipe-ingredients">
+        <article class="ingredient">
+          <span class="ingredient__circle"><img src="assets/system/symbol-scene.webp" alt="人龙舞现场：青壮年与少年以肩背相接搭成人龙" width="900" height="900" loading="lazy"></span>
+          <span class="ingredient__num">01</span><h3>现场图</h3><p>身体结构与动势</p>
+        </article>
+        <span class="recipe-plus" aria-hidden="true">+</span>
+        <article class="ingredient">
+          <span class="ingredient__circle"><img src="assets/system/dragon-element.webp" alt="人龙舞龙元素：龙首、须、鳞与盘旋" width="900" height="900" loading="lazy"></span>
+          <span class="ingredient__num">02</span><h3>龙元素</h3><p>角、须、鳞与盘旋</p>
+        </article>
+        <span class="recipe-plus" aria-hidden="true">+</span>
+        <article class="ingredient">
+          <span class="ingredient__circle"><img src="assets/system/symbol-ip.webp" alt="小玲珑动漫风格头像" width="420" height="420" loading="lazy"></span>
+          <span class="ingredient__num">03</span><h3>动漫风格</h3><p>当代的角色语言</p>
+        </article>
+      </div>
+      <span class="recipe-arrow" aria-hidden="true"><i></i><em>合成</em></span>
+      <div class="recipe-result">
+        <div class="logo-orbit">
+          <span class="logo-orbit__ring"></span>
+          <span class="logo-orbit__ring logo-orbit__ring--two"></span>
+          <img src="assets/brand/logo.png" alt="人龙舞数字文创馆圆形标志" width="512" height="512" loading="lazy">
+        </div>
+        <p><strong>双 IP × 辅助图形</strong><span>一个可以被反复使用的文化符号</span></p>
+      </div>
+    </div>
+
+    <div class="evolution" data-reveal>
+      <div class="evolution__head">
+        <span class="sub-kicker">ICON EVOLUTION / 图元演化</span>
+        <p>由圆形徽记出发，经龙纹、云纹两次变形，得到可以无限拼接的底纹；再把底纹反向收束成一朵“龙云”。</p>
+      </div>
+      <div class="evolution__body">
+        <div class="evolution__steps" role="group" aria-label="图元演化阶段">
+          <button class="evo-step is-active" type="button" data-evo="0"><span class="evo-step__visual"><img src="assets/brand/logo.png" alt="" width="512" height="512" loading="lazy"></span><span class="evo-step__label">01 圆形徽记<small>SEAL</small></span></button>
+          <span class="evo-arrow" aria-hidden="true">→</span>
+          <button class="evo-step" type="button" data-evo="1"><span class="evo-step__visual"><img src="assets/brand/motif_dragon.png" alt="" width="486" height="257" loading="lazy"></span><span class="evo-step__label">02 龙纹<small>DRAGON</small></span></button>
+          <span class="evo-arrow" aria-hidden="true">→</span>
+          <button class="evo-step" type="button" data-evo="2"><span class="evo-step__visual"><img src="assets/brand/motif_cloud.png" alt="" width="365" height="329" loading="lazy"></span><span class="evo-step__label">03 龙云<small>CLOUD</small></span></button>
+        </div>
+        <p class="evolution__desc" id="evoDesc">圆形徽记把龙首、人链与海浪收进一个完整的圆。三个人形，是这条龙最小的结构单位。</p>
+      </div>
+    </div>
+
+    <div class="brand-grid">
+      <figure class="brand-sketch" data-reveal>
+        <img src="assets/system/logo-sketch.webp" alt="标志与辅助图形线稿推演，由写实龙头到抽象龙纹再到云纹" width="1240" height="900" loading="lazy">
+        <figcaption><span>标志与辅助图形 · 线稿推演</span><span>SKETCH / 03 STEPS</span></figcaption>
+      </figure>
+      <div class="type-block" data-reveal>
+        <span class="sub-kicker">WORDMARK &amp; TYPEFACE / 标准字</span>
+        <div class="type-wordmark">
+          <img src="assets/brand/wordmark.png" alt="岭南人龙舞毛笔手写标准字" width="1169" height="200" loading="lazy">
+          <img src="assets/brand/wordmark_sub.png" alt="非遗文创产品设计标准字" width="1125" height="127" loading="lazy" class="type-wordmark__sub">
+        </div>
+        <p class="type-copy">毛笔手写体负责“非遗”的笔锋与飞白；无衬线黑体负责“可用”的信息层。传统感与现代性，在双轨字体秩序里各司其职。</p>
+        <div class="type-lockup">
+          <span class="type-lockup__cn">龙腾湛海<br>舞韵相传</span>
+          <span class="type-lockup__en">LINGNAN RENLONGWU<br>DRAGON DANCE</span>
+        </div>
+        <div class="type-tiers"><span>一级 · 横排全称</span><span>二级 · 竖排简称</span><span>三级 · 单字「龙」</span></div>
+      </div>
+    </div>
+
+    <div class="palette-block" data-reveal>
+      <div class="palette-head">
+        <div><span class="sub-kicker">COLOR SYSTEM / 海洋暖调</span><h3>热烈而不燥，<br>传统而不旧。</h3></div>
+        <p>主色取自岭南年节与海岛日落。五色共享同一套明度关系，浅色托举图形，深色承担信息。<br><button type="button" class="text-link" id="paletteCopyHint">点击任一色卡，复制 HEX <span>↗</span></button></p>
+      </div>
+      <div class="palette-layout">
+        <div class="palette" id="palette">
+          <button type="button" class="swatch" data-hex="#A63A28" data-name="朱砂红" data-role="仪式与非遗的厚重" style="--swatch:#A63A28">
+            <span class="swatch__block"></span><span class="swatch__name">朱砂红</span><span class="swatch__hex">#A63A28</span><span class="swatch__role">仪式 · 厚重</span>
+          </button>
+          <button type="button" class="swatch" data-hex="#D66934" data-name="暖橘" data-role="灯笼、炮仗与黄昏海面" style="--swatch:#D66934">
+            <span class="swatch__block"></span><span class="swatch__name">暖橘</span><span class="swatch__hex">#D66934</span><span class="swatch__role">温度 · 节庆</span>
+          </button>
+          <button type="button" class="swatch" data-hex="#E8B65A" data-name="藤黄" data-role="龙头与服饰的高光" style="--swatch:#E8B65A">
+            <span class="swatch__block"></span><span class="swatch__name">藤黄</span><span class="swatch__hex">#E8B65A</span><span class="swatch__role">高光 · 点亮</span>
+          </button>
+          <button type="button" class="swatch" data-hex="#FAECD9" data-name="米白" data-role="大面积留白，让图形呼吸" style="--swatch:#FAECD9">
+            <span class="swatch__block"></span><span class="swatch__name">米白</span><span class="swatch__hex">#FAECD9</span><span class="swatch__role">留白 · 呼吸</span>
+          </button>
+          <button type="button" class="swatch" data-hex="#2B211C" data-name="墨褐" data-role="信息层，替代纯黑降低锐利度" style="--swatch:#2B211C">
+            <span class="swatch__block"></span><span class="swatch__name">墨褐</span><span class="swatch__hex">#2B211C</span><span class="swatch__role">信息 · 秩序</span>
+          </button>
+        </div>
+        <div class="palette-preview" id="palettePreview">
+          <span class="palette-preview__char" id="paletteGlyph">龙</span>
+          <div class="palette-preview__meta"><span id="paletteName">朱砂红</span><strong id="paletteHex">#A63A28</strong><small id="paletteRole">仪式与非遗的厚重</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand products" id="products" data-section data-chapter="周边" data-theme="sand" aria-labelledby="productsTitle">
+  <div class="shell">
+    <header class="section-head section-head--products" data-reveal>
+      <div class="section-marker">
+        <span class="section-marker__num">05</span>
+        <span class="section-marker__line"></span>
+        <span class="section-marker__label">周边 / PRODUCTS</span>
+      </div>
+      <h2 class="display" id="productsTitle">让龙，出现在衣角、<br>袋面与<em>掌心</em>。</h2>
+      <div class="section-head__side">
+        <p class="section-lead">周边从 4 类扩展到 11 类，按穿戴、携带、桌面、纸品与收藏四个场景展开。同一图形换载体，检验它能不能在 1.5 cm 的钥匙扣与 50 cm 的帆布袋上同样成立。</p>
+        <span class="section-index">11 PIECES · 005</span>
+      </div>
+    </header>
+
+    <div class="product-toolbar" data-reveal>
+      <div class="product-filters" role="group" aria-label="周边分类筛选">
+        <button type="button" class="is-active" data-filter="all">全部 <span>11</span></button>
+        <button type="button" data-filter="wear">穿戴</button>
+        <button type="button" data-filter="carry">携带</button>
+        <button type="button" data-filter="desk">桌面</button>
+        <button type="button" data-filter="paper">纸品</button>
+        <button type="button" data-filter="collect">收藏</button>
+      </div>
+      <button type="button" class="auto-tour" id="autoTour" aria-pressed="false"><span class="auto-tour__dot"></span><span>自动巡展</span><em>OFF</em></button>
+    </div>
+
+    <div class="product-console" data-reveal>
+      <aside class="product-index" aria-label="周边列表">
+        <div class="product-index__head"><span>INDEX / 产品索引</span><span id="productVisibleCount">11 PIECES</span></div>
+        <div class="product-index__list" id="productIndex"></div>
+        <div class="product-index__foot">
+          <span>使用频次 × 单价</span>
+          <p>从引流款到礼赠款，共享同一套视觉与工艺规范。</p>
+        </div>
+      </aside>
+
+      <div class="product-stage" id="productStage" data-accent="#a63a28">
+        <div class="product-visual">
+          <span class="product-visual__num" id="productNum" aria-hidden="true">01</span>
+          <span class="product-visual__ring" aria-hidden="true"></span>
+          <img id="productImg" src="assets/products/badges.webp" alt="双 IP 徽章系列" width="1500" height="1000">
+          <button type="button" class="product-zoom" id="productZoom" aria-label="查看当前周边大图">预览大图 <span>↗</span></button>
+          <span class="product-visual__stamp" id="productStamp">收藏<br>COLLECT</span>
+        </div>
+        <div class="product-info" aria-live="polite">
+          <div class="product-info__meta"><span id="productCategory">收藏 · 引流</span><span id="productOrder">NO. 01 / 11</span></div>
+          <h3 id="productName">双 IP 徽章系列</h3>
+          <p class="product-info__en" id="productEn">ENAMEL BADGES</p>
+          <p class="product-info__story" id="productStory">八枚徽章按“单体—组合—场景”三种构图组织：单体看角色，组合看关系，场景看故事。同一色系下用底纹变化区分，既成系列，又不至于雷同。</p>
+          <dl class="product-specs" id="productSpecs"></dl>
+          <div class="product-info__actions">
+            <button type="button" class="text-link" id="productNext">下一件周边 <span>→</span></button>
+            <span class="product-info__hint">← → 可切换</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-thumbs" id="productThumbs" aria-label="周边缩略图"></div>
+    <p class="product-footnote">产品单价与价格带为定位示意，实际以打样与报价为准。点击任意产品可查看材质、工艺与规格。</p>
+  </div>
+</section>
+
+<section class="section section--ink craft" id="craft" data-section data-chapter="工艺" data-theme="dark" aria-labelledby="craftTitle">
+  <div class="shell">
+    <header class="section-head" data-reveal>
+      <div class="section-marker section-marker--gold">
+        <span class="section-marker__num">06</span>
+        <span class="section-marker__line"></span>
+        <span class="section-marker__label">工艺 / CRAFT</span>
+      </div>
+      <h2 class="display" id="craftTitle">让看得见的效果，<br>变成<em>做得出的参数</em>。</h2>
+      <div class="section-head__side">
+        <p class="section-lead">把展板上的漂亮效果翻译成印前参数：1440 dpi、ΔE ≤ 3、透光率 ≥ 88%、3 mm 出血。四条打样门槛，决定方案能否从概念走向商品。</p>
+        <span class="section-index">MATERIAL &amp; MAKING · 006</span>
+      </div>
+    </header>
+
+    <div class="craft-top">
+      <figure class="craft-figure" data-reveal>
+        <img src="assets/products/craft-overview.webp" alt="产品印花、徽章、手提袋与透明材质的工艺细节" width="1094" height="378" loading="lazy">
+        <figcaption><span>看得见的效果 / 做得出的参数</span><span>PRINT &amp; FINISH</span></figcaption>
+      </figure>
+      <div class="craft-metrics" data-reveal>
+        <div><strong>1440<small>dpi</small></strong><span>数码直喷<br>渐变不断层</span></div>
+        <div><strong>≤3<small>ΔE</small></strong><span>实物与色卡<br>色差控制</span></div>
+        <div><strong>≥88<small>%</small></strong><span>PVC 透光率<br>透明质感</span></div>
+        <div><strong>3<small>mm</small></strong><span>所有印刷件<br>预留出血</span></div>
+      </div>
+    </div>
+
+    <div class="craft-grid">
+      <article class="craft-card" data-reveal><span class="craft-card__num">01</span><h3>数码直喷</h3><p>1440 dpi，渐变不断层。用于 T 恤与帆布袋，适合多色、小批量与快速打样。</p><span class="craft-card__spec">TEE / TOTE · DTG</span></article>
+      <article class="craft-card" data-reveal><span class="craft-card__num">02</span><h3>柯式四色套印</h3><p>网点点阵稳定，局部光油提亮。用于门票、体验券与明信片，控制成本且便于编号改版。</p><span class="craft-card__spec">PAPER · CMYK</span></article>
+      <article class="craft-card" data-reveal><span class="craft-card__num">03</span><h3>UV 彩印</h3><p>在透明 PVC 上直接成像，兼顾通透与耐久。袋内图景与商品互为背景。</p><span class="craft-card__spec">PVC 0.3 MM · UV</span></article>
+      <article class="craft-card" data-reveal><span class="craft-card__num">04</span><h3>金属冲压 + 覆膜</h3><p>马口铁 0.5 mm 或锌合金，冲压后覆哑光膜。色彩清晰，耐磨，适合高密度图案。</p><span class="craft-card__spec">BADGE · STAMPING</span></article>
+      <article class="craft-card" data-reveal><span class="craft-card__num">05</span><h3>IMD / 双面滴胶</h3><p>手机壳采用 TPU 软边 + PC 硬背，IMD 覆膜耐刮；钥匙扣双面异图，滴胶保护。</p><span class="craft-card__spec">PHONE / KEYRING</span></article>
+      <article class="craft-card" data-reveal><span class="craft-card__num">06</span><h3>模切 · 注塑</h3><p>贴纸按主图形外轮廓模切，3 mm 透明亚克力双面 UV 印刷。低单价、高自由度。</p><span class="craft-card__spec">DIE-CUT / ACRYLIC</span></article>
+    </div>
+
+    <div class="prepress" data-reveal>
+      <div class="prepress__copy">
+        <span class="sub-kicker">PREPRESS CHECK / 印前核查</span>
+        <h3>在开机之前，<br>先把问题留在纸面。</h3>
+        <p>任何一件新品打样前，都要过一遍下面五项。五项全部确认，方案才具备进入量产的资格。</p>
+        <div class="prepress__progress"><span id="prepressCount">0 / 5</span><div><i id="prepressBar"></i></div></div>
+      </div>
+      <div class="prepress__checklist" id="prepressList">
+        <label class="check-item"><input type="checkbox"><span class="check-item__box"></span><span class="check-item__text"><strong>色值校准</strong><small>以五色规范的 CMYK 为基准，实物与色卡色差 ΔE ≤ 3。</small></span></label>
+        <label class="check-item"><input type="checkbox"><span class="check-item__box"></span><span class="check-item__text"><strong>出血预留</strong><small>所有印刷件预留 3 mm 出血，避免裁切露白。</small></span></label>
+        <label class="check-item"><input type="checkbox"><span class="check-item__box"></span><span class="check-item__text"><strong>专金替代</strong><small>金色部位改用专金，不用四色叠印，保证金属质感。</small></span></label>
+        <label class="check-item"><input type="checkbox"><span class="check-item__box"></span><span class="check-item__text"><strong>刀版内缩</strong><small>徽章与亚克力挂件的刀版按 0.5 mm 内缩，避免冲切露白。</small></span></label>
+        <label class="check-item"><input type="checkbox"><span class="check-item__box"></span><span class="check-item__text"><strong>材质厚度</strong><small>PVC 0.3 mm / 帆布 12 安 / 马口铁 0.5 mm / 亚克力 3 mm。</small></span></label>
+      </div>
+      <div class="prepress__stamp" id="prepressStamp" aria-live="polite">
+        <span>可<br>打<br>样</span><small>READY TO SAMPLE</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper process" id="process" data-section data-chapter="档案" data-theme="paper" aria-labelledby="processTitle">
+  <div class="section-rule" aria-hidden="true"></div>
+  <div class="shell">
+    <header class="section-head" data-reveal>
+      <div class="section-marker">
+        <span class="section-marker__num">07</span>
+        <span class="section-marker__line"></span>
+        <span class="section-marker__label">档案 / PROCESS</span>
+      </div>
+      <h2 class="display" id="processTitle">从一张草图，到<br>一套<em>可以落地的系统</em>。</h2>
+      <div class="section-head__side">
+        <p class="section-lead">两个月，六个阶段，九轮迭代。从草案发散到文化校准、比例修正与工艺适配，每一步都留有痕迹。草图不是装饰，而是把设计决策摊开：哪一版胖了、哪一版颜色重了、哪一段文字被挪走了。</p>
+        <span class="section-index">FROM DRAFT TO FINAL · 007</span>
+      </div>
+    </header>
+
+    <div class="process-layout" data-reveal>
+      <div class="process-nav" role="tablist" aria-label="创作过程的六个阶段">
+        <button type="button" class="process-step is-active" role="tab" aria-selected="true" data-process="0"><span>01</span><strong>田野调研</strong><small>RESEARCH</small></button>
+        <button type="button" class="process-step" role="tab" aria-selected="false" data-process="1"><span>02</span><strong>符号提取</strong><small>EXTRACT</small></button>
+        <button type="button" class="process-step" role="tab" aria-selected="false" data-process="2"><span>03</span><strong>双 IP 塑造</strong><small>CHARACTER</small></button>
+        <button type="button" class="process-step" role="tab" aria-selected="false" data-process="3"><span>04</span><strong>视觉系统</strong><small>SYSTEM</small></button>
+        <button type="button" class="process-step" role="tab" aria-selected="false" data-process="4"><span>05</span><strong>周边扩充</strong><small>EXPAND</small></button>
+        <button type="button" class="process-step" role="tab" aria-selected="false" data-process="5"><span>06</span><strong>定稿落地</strong><small>FINAL</small></button>
+      </div>
+      <div class="process-stage">
+        <div class="process-stage__media"><img src="assets/hero/origin-scene.webp" alt="创作过程第一阶段：田野调研与场景观察" id="processImg" width="1328" height="1174" loading="lazy"><span id="processImgTag">FIELD NOTE / 01</span></div>
+        <div class="process-stage__copy">
+          <span class="sub-kicker" id="processKicker">PHASE 01 / RESEARCH</span>
+          <h3 id="processTitleSmall">先确认“人链”是真的结构，不是修辞。</h3>
+          <p id="processText">以文献与影像为主，梳理源流、表演程式与身体结构。把“人链”拆成单元、连接、重复三个变量，把“龙头”拆成冠、角、须、目四个特征，把“海浪”拆成一条有节奏的波线。</p>
+          <div class="process-stage__foot"><span id="processMeta">文献 · 影像 · 口述</span><span id="processIndex">01 / 06</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="process-stats" data-reveal>
+      <div><strong data-count="2">2</strong><span>个月 / 从调研到定稿</span></div>
+      <div><strong data-count="9">9</strong><span>轮 / 版面与形象迭代</span></div>
+      <div><strong data-count="11">11</strong><span>类 / 文创产品矩阵</span></div>
+      <div><strong data-count="6">6</strong><span>种 / 印前落地工艺</span></div>
+    </div>
+
+    <div class="compare-block" data-reveal>
+      <div class="compare-head">
+        <div><span class="sub-kicker">BEFORE / AFTER</span><h3>删掉的，比加上去的多。</h3></div>
+        <p>从早期概念稿到双展板定稿：删掉满版英文装饰，删掉互相打架的三套配色；加上一条能生长的线，和两个会说话的角色。拖动中间的手柄查看变化。</p>
+      </div>
+      <div class="compare" id="compare" data-compare>
+        <img class="compare__before" src="assets/process/sketch-early-a.webp" alt="早期概念稿，产品总览与版式对位" width="1400" height="994" loading="lazy">
+        <div class="compare__after"><img src="assets/boards/board1.webp" alt="定稿展板一，品牌视觉设计与 IP 形象" width="1094" height="1928" loading="lazy"></div>
+        <div class="compare__labels"><span>第 1 稿 · 概念对位</span><span>定稿 · 双展板</span></div>
+        <div class="compare__handle" id="compareHandle" role="slider" tabindex="0" aria-label="对比早期概念稿与定稿，左右方向键调整" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span><i>↔</i></div>
+      </div>
+      <p class="compare__hint">DRAG / 拖动查看 · 左侧为早期概念稿，右侧为定稿展板</p>
+    </div>
+
+    <div class="archive-head" data-reveal>
+      <div><span class="sub-kicker">SKETCHBOOK / 创作档案</span><h3>让评审看见“为什么不是别的样子”。</h3></div>
+      <p>从角色铅笔稿、三视图结构线稿，到标志推演与版式骨架。点击任意图版，可放大查看。</p>
+    </div>
+    <div class="archive-track" id="archiveTrack" data-reveal>
+      <button type="button" class="archive-card" data-lightbox-group="archive" data-lightbox-src="assets/process/sketch-cover-hi.webp" data-lightbox-caption="创作草图封面 · 群体形象铅笔稿">
+        <span class="archive-card__img"><img src="assets/process/sketch-cover-hi.webp" alt="创作草图封面，群体形象铅笔稿" width="1300" height="1826" loading="lazy"></span>
+        <span class="archive-card__meta"><span>01 / COVER</span><strong>群体形象铅笔稿</strong><small>从身体关系到画面重心</small></span>
+      </button>
+      <button type="button" class="archive-card" data-lightbox-group="archive" data-lightbox-src="assets/process/sketch-zhan.webp" data-lightbox-caption="小湛龙角色铅笔稿">
+        <span class="archive-card__img"><img src="assets/process/sketch-zhan.webp" alt="小湛龙角色铅笔稿" width="848" height="1184" loading="lazy"></span>
+        <span class="archive-card__meta"><span>02 / CHARACTER</span><strong>小湛龙 · 铅笔稿</strong><small>2.5 头身比例的第一次落笔</small></span>
+      </button>
+      <button type="button" class="archive-card" data-lightbox-group="archive" data-lightbox-src="assets/process/sketch-structure.webp" data-lightbox-caption="三视图结构线稿 · 优化版">
+        <span class="archive-card__img"><img src="assets/process/sketch-structure.webp" alt="三视图结构线稿" width="1400" height="1980" loading="lazy"></span>
+        <span class="archive-card__meta"><span>03 / STRUCTURE</span><strong>三视图结构线稿</strong><small>肩宽、腰线、靴口三点对位</small></span>
+      </button>
+      <button type="button" class="archive-card" data-lightbox-group="archive" data-lightbox-src="assets/system/logo-sketch.webp" data-lightbox-caption="标志与辅助图形 · 线稿推演">
+        <span class="archive-card__img"><img src="assets/system/logo-sketch.webp" alt="标志与辅助图形线稿推演" width="1240" height="900" loading="lazy"></span>
+        <span class="archive-card__meta"><span>04 / IDENTITY</span><strong>龙纹与云纹推演</strong><small>圆形 → 龙纹 → 云纹</small></span>
+      </button>
+      <button type="button" class="archive-card" data-lightbox-group="archive" data-lightbox-src="assets/process/sketch-early-b.webp" data-lightbox-caption="早期概念稿 · 设计说明与标志推演">
+        <span class="archive-card__img"><img src="assets/process/sketch-early-b.webp" alt="早期概念稿，设计说明与标志推演" width="1400" height="994" loading="lazy"></span>
+        <span class="archive-card__meta"><span>05 / DRAFT</span><strong>版面骨架初稿</strong><small>先定位置，再填内容</small></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink boards" id="boards" data-section data-chapter="展板" data-theme="dark" aria-labelledby="boardsTitle">
+  <div class="shell">
+    <header class="section-head" data-reveal>
+      <div class="section-marker section-marker--gold">
+        <span class="section-marker__num">08</span>
+        <span class="section-marker__line"></span>
+        <span class="section-marker__label">展板 / BOARDS</span>
+      </div>
+      <h2 class="display" id="boardsTitle">两块展板，<br>一条完整的<em>叙事闭环</em>。</h2>
+      <div class="section-head__side">
+        <p class="section-lead">左板回答“它长什么样”，右板回答“它怎么做、值多少”。两板并置，构成从品牌视觉到产品工艺的完整闭环。</p>
+        <span class="section-index">1094 × 1928 PX × 2 · 008</span>
+      </div>
+    </header>
+
+    <div class="boards-grid">
+      <button type="button" class="board-card" data-board-index="0" data-reveal>
+        <span class="board-card__frame"><img src="assets/boards/board1.webp" alt="展板一：品牌视觉设计、IP 形象、海报与周边" width="1094" height="1928" loading="lazy"></span>
+        <span class="board-card__meta"><span><strong>展板一</strong>品牌视觉 / IP / 周边</span><em>01</em></span>
+      </button>
+      <button type="button" class="board-card" data-board-index="1" data-reveal>
+        <span class="board-card__frame"><img src="assets/boards/board2.webp" alt="展板二：产品细节、落地工艺、总结与设计价值" width="1094" height="1928" loading="lazy"></span>
+        <span class="board-card__meta"><span><strong>展板二</strong>产品细节 / 工艺 / 价值</span><em>02</em></span>
+      </button>
+    </div>
+    <div class="boards-foot" data-reveal>
+      <div><span>输出规格</span><strong>210 × 370 mm / 300 dpi</strong></div>
+      <div><span>版面语言</span><strong>米白托举图形 · 朱砂承担强调 · 细金分隔层级</strong></div>
+      <button type="button" class="text-link" data-open-boards>打开完整展板 <span>↗</span></button>
+    </div>
+
+    <figure class="poster-archive" data-reveal>
+      <div class="poster-archive__media"><img src="assets/poster/posters.webp" alt="岭南人龙舞宣传海报六款：小湛龙、小玲珑与人龙舞群像" width="340" height="590" loading="lazy"></div>
+      <figcaption>
+        <span class="sub-kicker">POSTER SERIES / 宣传海报</span>
+        <h3>“龙腾湛海，<br>舞韵相传。”</h3>
+        <p>六款海报共用同一套角色、色号与版式骨架：有人形特写，也有龙纹铺满。它们把展板上的主图形压缩成社交媒体的竖向比例，让非遗在手机屏幕里也能被一眼认出。</p>
+        <div class="poster-tags"><span>2026</span><span>6 POSTERS</span><span>竖版 / 社媒</span><span>REN LONG WU</span></div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section section--ink value" id="value" data-section data-chapter="价值" data-theme="dark" aria-labelledby="valueTitle">
+  <div class="shell">
+    <header class="section-head" data-reveal>
+      <div class="section-marker section-marker--gold">
+        <span class="section-marker__num">09</span>
+        <span class="section-marker__line"></span>
+        <span class="section-marker__label">价值 / VALUE</span>
+      </div>
+      <h2 class="display" id="valueTitle">让非遗从被观看，<br>变成<em>被带走</em>。</h2>
+      <div class="section-head__side">
+        <p class="section-lead">非遗的当代价值，最终要落在“人”与“产业”两端：年轻人是否愿意走近，地方是否能形成可持续的内容与商品供给。</p>
+        <span class="section-index">CULTURE TO INDUSTRY · 009</span>
+      </div>
+    </header>
+
+    <div class="value-flow" data-reveal>
+      <article><span>01 / CULTURE</span><h3>文化层</h3><p>准确的知识表述与精神内核：协作、团结、以身成龙。</p><em>交付：文化准确性</em></article>
+      <span class="value-flow__arrow" aria-hidden="true">→</span>
+      <article><span>02 / TRANSLATION</span><h3>转译层</h3><p>可复用的图形、角色与规范：双 IP、五色、标志与辅助图形。</p><em>交付：视觉系统</em></article>
+      <span class="value-flow__arrow" aria-hidden="true">→</span>
+      <article><span>03 / INDUSTRY</span><h3>产业层</h3><p>可售卖的商品与场景：11 类周边、六种工艺、三级价格带。</p><em>交付：产品线</em></article>
+    </div>
+
+    <div class="metrics" data-reveal>
+      <div><strong data-count="11">0</strong><span>类文创周边</span></div>
+      <div><strong data-count="6">0</strong><span>种落地工艺</span></div>
+      <div><strong data-count="2">0</strong><span>个核心 IP</span></div>
+      <div><strong data-count="9">0</strong><span>轮设计迭代</span></div>
+      <div><strong data-count="2006">0</strong><span>国家级非遗</span></div>
+    </div>
+
+    <div class="value-grid">
+      <article data-reveal><span class="value-card__icon">◎</span><h3>文化传播</h3><p>通过 Q 版双 IP、图解式展板与可参与的周边，把“观看”转化为“接触”，再转化为“理解”。</p><small>非遗活化 → 传统转译 → 贴近生活</small></article>
+      <article data-reveal><span class="value-card__icon">◇</span><h3>产品落地</h3><p>从徽章、贴纸到 T 恤、手提袋，三级价格带共享视觉与工艺规范，让“展板上的图”真正变成“货架上的物”。</p><small>引流款 / 主力款 / 礼赠款</small></article>
+      <article data-reveal><span class="value-card__icon">◉</span><h3>传播价值</h3><p>面向年轻人、社交媒体与日常场景。当一个人因为一枚徽章去搜索“人龙舞是什么”，传承的链路已经开始运转。</p><small>高频曝光 · 低决策 · 可分享</small></article>
+      <article data-reveal><span class="value-card__icon">✦</span><h3>设计亮点</h3><p>把“人链”抽象为图形语法，用同构异色建立双 IP，以双语锁定与工艺先行完成从文化到商品的闭环。</p><small>人链语法 / 双 IP / 工艺先行</small></article>
+    </div>
+
+    <div class="closing" data-reveal>
+      <div class="closing__bg"><img src="assets/hero/hero-wide.webp" alt="" width="1748" height="940" loading="lazy"></div>
+      <div class="closing__inner">
+        <span class="closing__kicker">THE DRAGON IS EVERYONE</span>
+        <p class="closing__quote">人龙舞的美，<br>在于它必须由<br><em>很多人共同完成</em>。</p>
+        <p>设计亦然。它从来不是一个人的独舞，而是文化、工艺、传播与商业的共同搭接。让“岭南人龙舞”从海岛走向更远的日常，也让每一个拿起它的人，成为这条龙身上的一节。</p>
+        <div class="closing__actions">
+          <button type="button" class="btn btn--light" data-open-boards>查看完整双展板<span class="btn__arrow">↗</span></button>
+          <a href="#hero" class="btn btn--ghost">重新巡览<span class="btn__arrow">↑</span></a>
+        </div>
+      </div>
+      <span class="closing__seal" aria-hidden="true">潮起来<br>传下去</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/brand/wordmark.png" alt="岭南人龙舞" width="1169" height="200" loading="lazy">
+        <p class="footer-brand__site">人龙舞数字文创馆</p>
+        <p class="footer-brand__quote">人相连，而成龙。</p>
+        <span>国家级非遗 · 龙舞（湛江人龙舞）<br>项目编号 Ⅲ-4 · 2006 年第一批</span>
+      </div>
+      <div class="footer-col">
+        <h4>作品信息</h4>
+        <p>岭南人龙舞 · 非遗文创产品设计<br>文化创意产品设计 / 视觉传达设计<br>双展板 2 幅 · IP 形象 2 组<br>文创周边 11 类 · 落地工艺 6 种</p>
+      </div>
+      <div class="footer-col">
+        <h4>章节导航</h4>
+        <a href="#origin">01 源流</a>
+        <a href="#ip">03 双 IP</a>
+        <a href="#products">05 周边</a>
+        <a href="#process">07 档案</a>
+        <a href="#boards">08 展板</a>
+      </div>
+      <div class="footer-col">
+        <h4>文化依据</h4>
+        <p>中国非物质文化遗产网<br>中国非物质文化遗产数字博物馆<br>“龙舞（湛江人龙舞）”项目页</p>
+        <button type="button" class="footer-link" data-demo-open>进入演示模式 <span>↗</span></button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>本页面为参赛展示设计，作品图文版权归创作者所有。</span>
+      <span>DESIGNED WITH THE DRAGON · 2026</span>
+      <a href="#hero">回到序章 ↑</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="作品大图查看">
+  <div class="lightbox__backdrop" data-lightbox-close></div>
+  <div class="lightbox__top">
+    <span id="lightboxCaption">作品大图</span>
+    <button type="button" class="lightbox__close" data-lightbox-close aria-label="关闭大图"><i></i><i></i></button>
+  </div>
+  <div class="lightbox__stage">
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="上一张">←</button>
+    <div class="lightbox__image-wrap" id="lightboxImageWrap"><img id="lightboxImg" src="" alt=""></div>
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="下一张">→</button>
+  </div>
+  <div class="lightbox__bottom">
+    <span id="lightboxCounter">1 / 1</span>
+    <span>点击图片放大 · ESC 关闭 · ← → 切换</span>
+    <div class="lightbox__thumbs" id="lightboxThumbs"></div>
+  </div>
+</div>
+
+<div class="demo-bar" id="demoBar" role="region" aria-label="比赛演示控制" aria-hidden="true">
+  <div class="demo-bar__progress"><span id="demoProgress"></span></div>
+  <div class="demo-bar__left">
+    <span class="demo-bar__pulse"></span>
+    <span>PRESENTATION MODE</span>
+    <strong id="demoChapter">序章</strong>
+  </div>
+  <div class="demo-bar__center">
+    <span id="demoCount">01 / 10</span>
+    <div class="demo-bar__ticks" id="demoTicks"></div>
+  </div>
+  <div class="demo-bar__actions">
+    <button type="button" id="demoPrev" aria-label="上一章节">←</button>
+    <button type="button" id="demoPause" aria-label="暂停演示"><span class="pause-icon"></span><em>暂停</em></button>
+    <button type="button" id="demoNext" aria-label="下一章节">→</button>
+    <button type="button" id="demoClose" aria-label="退出演示">×</button>
+  </div>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
